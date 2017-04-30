@@ -1,0 +1,632 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 68px;
+    background-color: #ffffff;
+}
+.nav {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    color: #2d3673;
+}
+
+nav {
+    width: 100%;
+}
+nav .menu-close {
+     
+    padding: 0;
+    display: none;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+nav .menu-open {
+    width: 100%;
+    padding: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+nav ul li {
+    padding: 10px 0;
+    list-style: none;
+    border-bottom: 1px solid #DFDEDE;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: #2d3673;
+}
+
+a:focus {
+    color: #30a7ca;
+}
+
+/*.menu-slidebar {
+    margin: 0;             ------- W przyszłości--------
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    zbox-shadow: 0px 5px 5px -1px rgba(0,0,0,0.59);
+    transition: max-height 0.4s; 
+} */
+
+.menu-slidebar p {
+    margin : 0;
+    padding: 0;
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+.menu-slidebar img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+
+
+.logotyp {
+    margin-left: 17px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #30a7ca;
+    text-transform: uppercase;
+}
+
+/* ========TEKST W HEADERZE NA ZDJECIU========*/
+
+.text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 700;
+    z-index: 20;
+    line-height: 1.2em;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(47,166,201,0.79), rgba(47,166,201,0.79)), url("background-header.jpg");
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-sign {
+    height: 32px;
+    width: 144px;
+    background-color: #30a7ca;
+    text-align: center;
+    margin: 0px 0px 24px;
+}
+
+.section-title {
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;;
+    font-size: 0.75em;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* ========ZAŁOGA========*/
+
+.crew {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.person-one, .person-two, .person-three, .person-four {
+    width: 150px;
+    height: 154px;
+    border-radius: 50%;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+.person-one {
+    margin:0;
+}
+
+.person-two, .person-three, .person-four {
+    margin: 25px 0 0;
+}
+
+.person-one img, .person-two img, .person-three img, .person-four img {
+    width:100%;
+    
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+
+.fig-name {
+    margin: 11px 0 0;
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #30a7ca;
+    text-transform: capitalize;
+}
+
+.fig-position {
+    font-size: 0.5em;
+    font-weight: 700;
+    color: #2d3673;
+    margin: 2px 0 0;
+    text-transform: capitalize;
+}
+
+
+
+/* ========PORTFOLIO========*/
+
+
+#portfolio-sign {
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.projects-portfolio {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('portfolio-background.jpg');
+    background-repeat: no-repeat;
+    background-size: 500%;
+    background-position: top;
+}
+
+.projects-portfolio h2 {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.projects-portfolio article p {
+    font-size: 0.58em;
+    font-weight: 400;
+    text-align: justify;
+    width: 289px;
+    color: #ffffff;
+    margin-bottom: 43px;
+}
+
+.projects-portfolio article, .projects-rectangles {
+    z-index: 20;
+}
+
+.example img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+    margin: 0;
+    
+}
+
+.example figure {
+    margin: 0;
+}
+
+.example figcaption {
+    margin: 7px 0 20px 0;
+    color: white;
+    font-size: 0.58em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.fig-container {
+    margin: 0 0 5px 0;
+    height: 114px;
+    width: 183px;
+    border: 2px solid #ffffff;
+}
+
+.example .fig-last {
+    margin-bottom: 15px;
+}
+
+.example .fig-last::after {
+    content: '\00b7';
+    font-size: 2em;
+    display: block;
+    margin-top: 15px; 
+}
+
+.projects-portfolio button {
+    cursor: pointer;
+    width: 183px;
+    height: 33px;
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-bottom: 71px;
+}
+
+.projects-portfolio button:focus {
+    border-color: #30a7ca;
+    color: #30a7ca; 
+}
+
+
+
+
+/* ========KONTAKT========*/
+
+
+
+#contact-sign {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    text-align: center;
+}
+
+.contact .contact-adress p, .contact .contact-mail p {
+    font-size: 0.7em;
+    line-height: 1.6em;
+    
+}
+
+.contact .contact-mail p {
+    text-align: left;
+}
+
+.contact .contact-adress img, .contact .contact-mail img {
+    width: 40px;
+    height: 40px; 
+}
+
+.contact .contact-adress, .contact .contact-mail {
+    margin-top: 43px;
+}
+
+/* ========STOPKA========*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    margin-top: 31px;
+    background-color: #ededed;
+    box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.55);
+}
+
+footer .media-icons img {
+    margin-top: 11px;
+    margin-right: 11px;
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    margin: 0;
+    display: block;
+    font-size: 0.46em;
+    color: #4a4a4a;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    float: none;
+    
+}
+
+/* ========== DO 415px ===========*/
+
+@media screen and (max-width: 415px) {
+    .contact {
+        display: column wrap;
+        text-align: center;   
+        }
+    .contact .contact-adress {
+        width: 100vw;
+    }
+    
+    .contact-mail {
+        width: auto;
+    }
+}
+
+
+/* ========== DO 660px ===========*/
+
+@media screen and (min-width: 660px) {
+    
+    /*======NAWIGACJA========*/
+    .nav {
+        flex-flow: row nowrap;
+        padding-bottom: 25px;
+        height: auto;
+    }
+    
+    nav .menu-open {
+        display: inline-block;
+        
+    }
+    
+    nav ul li {
+        padding: 0 4%;
+        display: inline-block;
+        border: none;
+    }
+    
+    nav ul li a:hover {
+        color: #30a7ca;
+    }
+    
+    .logotyp {
+        font-size: 1.5em;
+    }
+    
+    /*=========TEKST START=========*/
+    
+    .text {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+    
+    /*========PORTFOLIO=========*/
+    
+    .projects-portfolio {
+        background-size: 500%;
+    }
+    
+    .projects-portfolio article p {
+        width: 600px;
+        line-height: 1.5em;
+        font-size: 0.75em;
+    } 
+    
+    /*========KONTAKT========*/
+    
+    .contact {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+        justify-content:space-arround;
+            
+        }
+    
+    .contact .contact-adress p, .contact .contact-mail p {
+        font-size: 0.9em;
+}
+    
+    .contact .contact-adress img, .contact .contact-mail img {
+        width: 50px;
+        height: 50px; 
+}
+    
+    /*=========STOPKA=========*/
+    
+    footer .media-icons img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    footer p {
+        font-size: 0.8em;
+    }
+    
+    footer .media-icons img {
+    transition: 0.2s ease;
+    filter:grayscale(80%);
+}
+    
+    footer .media-icons img:hover {
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    filter:grayscale(0%);
+}
+    
+    
+}
+
+/*========== Do 1000px ==========*/
+
+@media screen and (min-width: 1000px) {
+    
+    heder {
+        background-image: linear-gradient(rgba(47,166,201,0.79), rgba(47,166,201,0.79)), url("background-header.jpg");
+    }
+   
+   /*=======ZAŁOGA======*/ 
+    .crew {
+        flex-flow: column wrap;
+        height: 500px;
+        justify-content: flex-start;
+        align-content: center;
+    }
+    
+    .person-two, .person-three, .person-four {
+        margin: 0;
+    }
+    
+    .person-one, .person-two {
+        margin-right: 200px;
+    }
+    
+    .person-two, .person-four {
+        margin-top: 20px;
+    }
+    .fig-name {
+    margin: 5px 200px 0 0;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+    .fig-position {
+    font-size: 0.6em;
+    font-weight: 700;
+    margin: 2px 0px 0;
+}
+    
+    #four-name, #three-name {
+    margin-right: 0;    
+}  
+    #one-position, #two-position {
+        margin-right: 200px;
+    }
+    
+    .person-one img, .person-two img, .person-three img, .person-four img {
+        filter:grayscale(90%);
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    
+    .person-one img:hover, .person-two img:hover, .person-three img:hover, .person-four img:hover {
+        filter:grayscale(0%);
+        transform: scale(2,2);
+    }
+    
+    .person-two img:hover {
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    
+    .person-three img:hover {
+        margin-top: 70px;
+    }
+    
+    .person-four img:hover {
+        margin-top: 70px;
+    }
+    
+    /* =======PORTFOLIO=====*/
+    
+    .projects-rectangles {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-arround;
+        
+    }
+    
+    .example {
+        margin: 0 25px;
+    }
+    
+    .projects-portfolio {
+        background-size: 500%;
+    }
+    
+    .projects-portfolio p {
+        width: 800px;
+        line-height: 1.5em;
+        font-size: 0.8em;
+    } 
+    
+    .example .fig-last::after {
+    content: ''; 
+}
+    
+    .projects-portfolio button {
+        margin-top: 25px;
+    }
+    
+    .projects-portfolio button:hover {
+        color: #30a7ca;
+        border-color: #30a7ca;
+    }
+    
+    .projects-portfolio button:focus {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+    
+    .example img {
+        filter: grayscale(90%) brightness(50%);
+        transition: all 1s ease;
+    }
+    
+    .fig-container {
+        overflow: hidden;
+    }
+    
+    .example img:hover {
+        width: 150%;
+        height: 150%;
+        cursor: pointer;
+        filter: brightness(90%);
+        filter: grayscale(0%);
+        box-shadow: 0px 0px 21px 5px rgba(255,255,255,1);  
+    }
+    
+    /*=======kontakt=========*/
+    
+    .contact {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+        justify-content:space-arround;    
+        }
+    
+    .contact .contact-adress img, .contact .contact-mail img{
+       transition: 2s ease; 
+    }
+    
+    .contact .contact-adress img:hover, .contact .contact-mail img:hover{
+        transform: rotate(720deg);
+    }
+
+/*========WYSOKIE ROZDZIELCZOSCI 1100PX+=======*/
+
+@media screen and (min-width:1100px) {
+    .projects-portfolio {
+        background-position: top;
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url('portfolio-background.jpg');
+        filter: grayscale(80%);
+        transition: 1s ease;
+    }
+    
+    .projects-portfolio:hover {
+        filter: grayscale(0%);
+    }
+}
