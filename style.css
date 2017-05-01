@@ -369,7 +369,6 @@ footer p {
 
 @media screen and (max-width: 415px) {
     .contact {
-        display: column wrap;
         text-align: center;   
         }
     .contact .contact-adress {
@@ -437,7 +436,7 @@ footer p {
         margin-left: auto;
         margin-right: auto;
         max-width: 800px;
-        justify-content:space-arround;
+        
             
         }
     
@@ -549,7 +548,7 @@ footer p {
     .projects-rectangles {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-arround;
+        
         
     }
     
@@ -609,18 +608,17 @@ footer p {
         margin-left: auto;
         margin-right: auto;
         max-width: 800px;
-        justify-content:space-arround;    
         }
     
-    .contact .contact-adress img, .contact .contact-mail img{
+    .contact .contact-adress img, .contact .contact-mail img {
        transition: 2s ease; 
     }
     
-    .contact .contact-adress img:hover, .contact .contact-mail img:hover{
+    .contact .contact-adress img:hover, .contact .contact-mail img:hover {
         transform: rotate(720deg);
     }
 
-/*========WYSOKIE ROZDZIELCZOSCI 1100PX+=======*/
+    /*========WYSOKIE ROZDZIELCZOSCI pow 1100PX=======*/
 
 @media screen and (min-width:1100px) {
     .projects-portfolio {
@@ -633,4 +631,4 @@ footer p {
     .projects-portfolio:hover {
         filter: grayscale(0%);
     }
-}
+} 
